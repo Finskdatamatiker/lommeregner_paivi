@@ -94,6 +94,11 @@ $(document).ready(function() {
 
 
 function opdatereScreen(visDetNyeTal) {
+    if(visDetNyeTal === "Infinity"){
+        visDetNyeTal = "Kan ikke udføres, nulstil med DEL"
+        $('.screen').text(visDetNyeTal.toString());
+    }
+
     $('.screen').text(visDetNyeTal.toString());
 };
 

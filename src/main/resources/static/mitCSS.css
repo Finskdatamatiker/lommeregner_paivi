@@ -1,0 +1,68 @@
+
+body {
+    background-color: white;
+}
+
+.lommeregner {
+    position: relative;
+    margin: 1em auto;
+    padding: 1em 0;
+    width: 600px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 3px #111;
+    font-family: 'Oxygen';
+}
+
+.raekke {
+    text-align: center;
+}
+
+.raekke div {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid #555;
+    background-color: #eee;
+    padding: 10px 0;
+    margin: 7px 5px;
+    box-shadow: 2px 2px 1px 1px #222;
+    width: 120px;
+}
+
+.raekke div.screen {
+    font-family: Droid Sans Mono;
+    display: table;
+    width: 85%;
+    background-color: white;
+    text-align: left;
+    font-size: 2em;
+    min-height: 1.2em;
+    margin-left: 1.0em;
+    padding-right: 0.5em;
+    padding-left: 10px;
+    border: 1px solid #888;
+    color: #333;
+}
+
+.raekke div.button.bred{
+    width: 255px;
+
+}
+
+.raekke div.button.bred.del{
+    background-color: red;
+}
+
+.raekke div.button.hoej{
+    padding: 37px 0px;
+    float: right;
+    margin-left: -25px;
+    margin-right: 35px;
+    background-color: turquoise;
+}
+.raekke div.button.groen{
+    background-color: mediumseagreen;
+}
+
+
+

@@ -15,9 +15,9 @@ body {
 
 /* Raekker, som er gemt i forskellige div.
 text-align: hvordan teksten er placeret.
-display: inline betyder, at lementer er vist på samme linje inden for
+display: inline betyder, at elementer er vist på samme linje inden for
 den samme blok. inline-block er det samme, men man må justere højden og bredden
-på elementet. Vi har knapper, som er brede og højere.
+på elementet. Vi elementer i rækkerne, som er brede og højere.
 #eee er den grå farve */
 .raekke{
     text-align: center;

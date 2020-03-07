@@ -1,8 +1,9 @@
-
+/* baggrunden */
 body {
     background-color: white;
 }
 
+/* hele lommeregneren*/
 .lommeregner {
     position: relative;
     margin: 1em auto;
@@ -10,14 +11,15 @@ body {
     width: 600px;
     background-color: white;
     box-shadow: 5px 5px 15px 3px #111;
-    font-family: 'Oxygen';
 }
 
-.raekke {
-    text-align: center;
-}
-
-.raekke div {
+/* Raekker, som er gemt i forskellige div.
+text-align: hvordan teksten er placeret.
+display: inline betyder, at lementer er vist på samme linje inden for
+den samme blok. inline-block er det samme, men man må justere højden og bredden
+på elementet. Vi har knapper, som er brede og højere.
+#eee er den grå farve */
+.raekke{
     text-align: center;
     display: inline-block;
     font-weight: bold;
@@ -28,39 +30,32 @@ body {
     box-shadow: 2px 2px 1px 1px #222;
     width: 120px;
 }
-
-.raekke div.screen {
-    font-family: Droid Sans Mono;
-    display: table;
+/* display, som er lidt anderledes fra de andre knapper.*/
+.screen {
     width: 85%;
     background-color: white;
     text-align: left;
     font-size: 2em;
     min-height: 1.2em;
-    margin-left: 1.0em;
-    padding-right: 0.5em;
-    padding-left: 10px;
-    border: 1px solid #888;
-    color: #333;
 }
-
-.raekke div.button.bred{
+/* den brede knap */
+.bred{
     width: 255px;
-
 }
 
-.raekke div.button.bred.del{
+/* delete-knappen */
+.del{
     background-color: red;
 }
-
-.raekke div.button.hoej{
-    padding: 37px 0px;
-    float: right;
+/* Den høje knap. Det var vigtigt, at den var placeret
+ under den tredje række for at den danner en række
+ for sig selv efter i det rigtige sted. */
+.hoej{
     margin-left: -25px;
     margin-right: 35px;
     background-color: turquoise;
 }
-.raekke div.button.groen{
+.groen{
     background-color: mediumseagreen;
 }
 

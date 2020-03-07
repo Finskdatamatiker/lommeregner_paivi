@@ -52,6 +52,9 @@ $(document).ready(function() {
          ELSE: operation opdateres, detNyeTal gemmes klart til forrigeTal til operationen
 
          DetNyeTal kan være "" og venter på at brugeren trykker på et nyt tal.
+         parseFloat() læser String og returnerer float. Den kigger på, om det først tegn er et nummer og hvis
+         ja, returnerer det nummeret (frem til der eventuel kommer andre andre tegn, men de gør der ikke her).
+         Hvis nej, returnerer det NaN (Not a Number)
          */
 
         else if (erOperator(denValgteKnap)) {
@@ -92,15 +95,17 @@ $(document).ready(function() {
     });
 });
 
-
+/* const = scope er funktionen og kan ikke ændre værdi.
+   Gemmer i en variabel, fordi gentages i funktionen.
+*/
 function opdatereScreen(visDetNyeTal) {
-    if(visDetNyeTal === "Infinity"){
+    const screen = $(".screen");
+    if(visDetNyeTal === "Infinity" || visDetNyeTal === "NaN"){
         visDetNyeTal = "Kan ikke udføres, nulstil med DEL"
-        $('.screen').text(visDetNyeTal.toString());
+        screen.text(visDetNyeTal.toString());
     }
-
-    $('.screen').text(visDetNyeTal.toString());
-};
+    screen.text(visDetNyeTal.toString());
+}
 
 
 function erTal(value) {

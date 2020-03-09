@@ -8,9 +8,14 @@ body {
     position: relative;
     margin: 1em auto;
     padding: 1em 0;
+    display: block;
     width: 600px;
     background-color: white;
     box-shadow: 5px 5px 15px 3px #111;
+}
+
+.raekke{
+    text-align: center;
 }
 
 /* Raekker, som er gemt i forskellige div.
@@ -19,7 +24,7 @@ display: inline betyder, at elementer er vist på samme linje inden for
 den samme blok. inline-block er det samme, men man må justere højden og bredden
 på elementet. Vi elementer i rækkerne, som er brede og højere.
 #eee er den grå farve */
-.raekke{
+.raekke div{
     text-align: center;
     display: inline-block;
     font-weight: bold;
@@ -30,32 +35,43 @@ på elementet. Vi elementer i rækkerne, som er brede og højere.
     box-shadow: 2px 2px 1px 1px #222;
     width: 120px;
 }
-/* display, som er lidt anderledes fra de andre knapper.*/
-.screen {
-    width: 85%;
+
+/* Skærm/display, som er lidt anderledes fra de andre knapper.
+   Dipslay table gør, at rækken ikke "hopper med", når man indtaster
+   et tal. */
+.raekke div.screen {
+    display: table;
+    width: 86%;
     background-color: white;
     text-align: left;
     font-size: 2em;
     min-height: 1.2em;
+    padding-left: 10px;
+    margin-left: 1.2em;
 }
+
 /* den brede knap */
-.bred{
+.raekke div.button.bred{
     width: 255px;
 }
 
 /* delete-knappen */
-.del{
+.raekke div.button.del{
     background-color: red;
 }
 /* Den høje knap. Det var vigtigt, at den var placeret
  under den tredje række for at den danner en række
- for sig selv efter i det rigtige sted. */
-.hoej{
+ for sig selv efter i det rigtige sted og float skal være højre. */
+.raekke div.button.hoej{
+    float: right;
+    height: 42px;
     margin-left: -25px;
     margin-right: 35px;
     background-color: turquoise;
+    vertical-align: middle;
+    padding-top: 40px;
 }
-.groen{
+.raekke div.button.groen{
     background-color: mediumseagreen;
 }
 
